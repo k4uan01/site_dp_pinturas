@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DP Pinturas | Pintura Profissional em Orleans e Região</title>
+    <meta
+      name="description"
+      content="Pintura residencial e comercial com tecnologia airless em Orleans/SC. Acabamento profissional, equipe especializada e orçamento sem compromisso."
+    />
+    <meta property="og:title" content="DP Pinturas | Pintura Profissional" />
+    <meta
+      property="og:description"
+      content="Transforme seus ambientes com pintura profissional, qualidade de acabamento e estrutura de verdade."
+    />
+    <meta property="og:image" content="assets/hero-painter.png" />
+    <link rel="icon" href="assets/logo-alt.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#inicio" aria-label="DP Pinturas">
+          <img src="assets/logo-crop.png" alt="Logo DP Pinturas" />
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <a href="#inicio" class="is-active">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a class="btn btn--primary header__cta" href="https://wa.me/5548996228018?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Solicitar Orçamento
+        </a>
+        <button class="nav-toggle" aria-label="Abrir menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <span class="eyebrow reveal">Transforme seus ambientes</span>
+            <h1 class="reveal">
+              Pintura Profissional para Ambientes
+              <span class="highlight">Residenciais e Comerciais</span>
+            </h1>
+            <p class="lead reveal">
+              Mais do que pintura, entregamos ambientes renovados com qualidade, confiança e acabamento impecável. Do preparo à última demão, seu projeto em boas mãos.
+            </p>
+            <div class="hero__actions reveal">
+              <a class="btn btn--primary" href="https://wa.me/5548996228018?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Solicitar Orçamento
+              </a>
+              <a class="btn btn--ghost" href="#servicos">Ver Serviços <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="hero__chips">
+              <div class="chip reveal">
+                <span class="chip__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M17.15 2.2h2.2v4.05l2.95 2.4c.42.34.36.98-.12 1.22H20.4V21H14.7v-6.35h-5.4V21H3.6V9.87H1.82c-.48-.24-.54-.88-.12-1.22L12 2.05l5.15 4.2V2.2Zm-6.35 12.45h2.4V21h-2.4v-6.35Z"/></svg>
+                </span>
+                <span>Pintura Residencial<br>e Comercial</span>
+              </div>
+              <div class="chip reveal">
+                <span class="chip__icon chip__icon--airless">
+                  <img src="assets/icon-airless.png" alt="" />
+                </span>
+                <span>Tecnologia<br>Airless</span>
+              </div>
+              <div class="chip reveal">
+                <span class="chip__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.1 3.6a3.55 3.55 0 1 1 0 7.1 3.55 3.55 0 0 1 0-7.1Zm7.35 1.35a2.85 2.85 0 1 1 0 5.7 2.85 2.85 0 0 1 0-5.7ZM2.7 18.55C2.7 15.2 5.5 13 9.1 13s6.4 2.2 6.4 5.55V21H2.7v-2.45Zm12.85-4.7c.3-.05.6-.08.9-.08 2.95 0 5.35 2.05 5.35 4.85V21h-3.35v-2.38c0-1.72-.62-3.22-1.9-4.27.32-.16.64-.32 1-.5Z"/></svg>
+                </span>
+                <span>Equipe<br>Especializada</span>
+              </div>
+              <div class="chip reveal">
+                <span class="chip__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.1c-4.35 0-7.9 3.45-7.9 8.05 0 5.85 7.9 12.75 7.9 12.75s7.9-6.9 7.9-12.75c0-4.6-3.55-8.05-7.9-8.05Zm0 10.7a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>
+                </span>
+                <span>Orleans e<br>região</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <img src="assets/hero-painter.png" alt="Profissional da DP Pinturas pintando uma parede com rolo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="servicos">
+        <div class="container services__layout">
+          <div class="services__head">
+            <span class="eyebrow reveal">Nossos serviços</span>
+            <h2 class="reveal">Soluções completas em pintura e acabamentos</h2>
+            <p class="lead reveal">
+              Do residencial ao comercial, unimos técnica, equipamentos profissionais e os melhores materiais para garantir qualidade em cada detalhe.
+            </p>
+          </div>
+          <div class="services__grid">
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M17.15 2.2h2.2v4.05l2.95 2.4c.42.34.36.98-.12 1.22H20.4V21H14.7v-6.35h-5.4V21H3.6V9.87H1.82c-.48-.24-.54-.88-.12-1.22L12 2.05l5.15 4.2V2.2Zm-6.35 12.45h2.4V21h-2.4v-6.35Z"/></svg>
+              </div>
+              <h3>Pintura Residencial e Comercial</h3>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="assets/icon-airless-machine.png" alt="" />
+              </div>
+              <h3>Pintura Airless</h3>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="assets/icon-desempenadeira.png" alt="" />
+              </div>
+              <h3>Aplicação de Massa</h3>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 16.2h15.6v3.2c0 .6-.5 1.1-1.1 1.1H5.3c-.6 0-1.1-.5-1.1-1.1v-3.2Zm1.6-5.2h12.4v3.6H5.8V11Zm2.2-5.3h8c.5 0 .9.4.9.9v2.8H7.1V6.6c0-.5.4-.9.9-.9Z"/></svg>
+              </div>
+              <h3>Cimento Queimado</h3>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2 13.2 7 18 8.2 13.2 9.4 12 14.2 10.8 9.4 6 8.2 10.8 7 12 2.2Zm6.6 9.2 0.7 2.7 2.7.7-2.7.7-.7 2.7-.7-2.7-2.7-.7 2.7-.7.7-2.7Zm-13.2 1.6.6 2.3 2.3.6-2.3.6-.6 2.3-.6-2.3-2.3-.6 2.3-.6.6-2.3Z"/></svg>
+              </div>
+              <h3>Efeitos Decorativos</h3>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="assets/icon-madeira-stain.png" alt="" />
+              </div>
+              <h3>Madeiras e Stain</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="airless" id="airless">
+        <img class="airless__bg" src="assets/equipment-action.png" alt="Equipamentos profissionais Nauber em ambiente de obra" />
+        <div class="container airless__layout">
+          <div class="airless__content">
+            <span class="eyebrow reveal">Equipamentos profissionais</span>
+            <h2 class="reveal">
+              Maquinário Completo
+              <span>para Resultados Reais</span>
+            </h2>
+            <p class="lead reveal">
+              Trabalhamos com equipamentos de ponta, como Airless, compressores, lixadeiras, aspiradores e acessórios, garantindo mais qualidade, produtividade e um acabamento impecável em cada projeto.
+            </p>
+            <a class="btn btn--airless reveal" href="#projetos">
+              Conheça nossos equipamentos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+          <ul class="airless__list">
+            <li class="reveal">
+              <span class="airless__icon" aria-hidden="true">
+                <img src="assets/icon-equip-pintura.png" alt="" />
+              </span>
+              <span>Equipamentos<br>para pintura</span>
+            </li>
+            <li class="reveal">
+              <span class="airless__icon" aria-hidden="true">
+                <img src="assets/icon-compressor.png" alt="" />
+              </span>
+              <span>Compressores<br>de ar</span>
+            </li>
+            <li class="reveal">
+              <span class="airless__icon" aria-hidden="true">
+                <img src="assets/icon-lixadeira.png" alt="" />
+              </span>
+              <span>Lixadeiras<br>e preparação</span>
+            </li>
+            <li class="reveal">
+              <span class="airless__icon" aria-hidden="true">
+                <img src="assets/icon-aspirador.png" alt="" />
+              </span>
+              <span>Aspiradores<br>e limpeza</span>
+            </li>
+            <li class="reveal">
+              <span class="airless__icon" aria-hidden="true">
+                <img src="assets/icon-acessorios.png" alt="" />
+              </span>
+              <span>Acessórios<br>e peças</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="split" id="antes-depois">
+        <div class="container split__grid">
+          <div class="split__copy">
+            <span class="eyebrow reveal">Transformação real</span>
+            <h2 class="reveal">Antes e Depois</h2>
+            <p class="lead reveal">
+              Veja como um bom planejamento, a preparação correta e a técnica certa transformam completamente um ambiente.
+            </p>
+          </div>
+          <div class="ba reveal" aria-label="Comparador de imagens antes e depois">
+            <img src="assets/after.png" alt="Ambiente depois da pintura" />
+            <div class="ba__before-wrap">
+              <img src="assets/before.png" alt="Ambiente antes da pintura" />
+            </div>
+            <span class="ba__label ba__label--before">Antes</span>
+            <span class="ba__label ba__label--after">Depois</span>
+            <div class="ba__handle">
+              <div class="ba__knob"><i data-lucide="chevrons-left-right"></i></div>
+            </div>
+          </div>
+          <div class="process">
+            <img
+              class="process__brush reveal"
+              src="imagens/Faixa Verde com Mensagem de Pintura.png"
+              alt="O acabamento começa antes da tinta"
+            />
+            <div class="process__steps">
+              <article class="step reveal">
+                <span class="step__n">1</span>
+                <h3>Proteção</h3>
+                <p>Protegemos pisos e móveis</p>
+              </article>
+              <article class="step reveal">
+                <span class="step__n">2</span>
+                <h3>Massa</h3>
+                <p>Correção de imperfeições</p>
+              </article>
+              <article class="step reveal">
+                <span class="step__n">3</span>
+                <h3>Lixamento</h3>
+                <p>Superfície nivelada e pronta</p>
+              </article>
+              <article class="step reveal">
+                <span class="step__n">4</span>
+                <h3>Aspiração</h3>
+                <p>Ambiente livre de resíduos</p>
+              </article>
+              <article class="step reveal">
+                <span class="step__n">5</span>
+                <h3>Aplicação</h3>
+                <p>Com técnica e equipamento</p>
+              </article>
+              <article class="step reveal">
+                <span class="step__n">6</span>
+                <h3>Acabamento</h3>
+                <p>Resultado final de alto padrão</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="sobre">
+        <picture>
+          <source
+            media="(max-width: 860px)"
+            srcset="imagens/Compromisso%20pessoal%2C%20qualidade%20real.png"
+          />
+          <img
+            class="about__banner"
+            src="imagens/Banner Institucional da DP Pinturas.png"
+            alt="Sobre a DP Pinturas. Mais que pintura, um compromisso pessoal. Douglas, fundador da DP Pinturas."
+          />
+        </picture>
+      </section>
+
+      <section class="projects" id="projetos">
+        <div class="container">
+          <div class="projects__layout">
+            <div class="projects__intro">
+              <span class="eyebrow reveal">Nossos projetos</span>
+              <h2 class="reveal">Ambientes que<br>ganham novas histórias</h2>
+              <p class="lead reveal">
+                Cada projeto é único. Veja alguns dos trabalhos que já realizamos em Orleans e região.
+              </p>
+              <a class="btn btn--primary reveal" href="#projetos">
+                Ver todos os projetos
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14" />
+                  <path d="M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </div>
+            <div class="gallery">
+              <a class="gallery__item gallery__item--main reveal" href="imagens/projetos/Casa Moderna com Piscina e Céu Dramático.png" data-lightbox="imagens/projetos/Casa Moderna com Piscina e Céu Dramático.png">
+                <img src="imagens/projetos/Casa Moderna com Piscina e Céu Dramático.png" alt="Residência moderna com fachada e piscina pintada pela DP Pinturas" />
+                <div class="gallery__caption">
+                  <span class="tag">Fachada</span>
+                  <h3>Residência Moderna</h3>
+                  <p>Pintura externa com tecnologia Airless.</p>
+                </div>
+                <span class="gallery__go" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17 17 7" />
+                    <path d="M8 7h9v9" />
+                  </svg>
+                </span>
+              </a>
+              <a class="gallery__item reveal" href="imagens/projetos/Casa Moderna com Varanda Suspensa.png" data-lightbox="imagens/projetos/Casa Moderna com Varanda Suspensa.png">
+                <img src="imagens/projetos/Casa Moderna com Varanda Suspensa.png" alt="Casa residencial com varanda e pintura externa" />
+                <div class="gallery__caption">
+                  <span class="tag">Residencial</span>
+                  <h3>Casa com Varanda</h3>
+                </div>
+              </a>
+              <a class="gallery__item reveal" href="imagens/projetos/Casa Rural Moderna em Campo Verde.png" data-lightbox="imagens/projetos/Casa Rural Moderna em Campo Verde.png">
+                <img src="imagens/projetos/Casa Rural Moderna em Campo Verde.png" alt="Casa rural com parede texturizada e madeira" />
+                <div class="gallery__caption">
+                  <span class="tag">Cimento Queimado</span>
+                  <h3>Casa Rural</h3>
+                </div>
+              </a>
+              <a class="gallery__item reveal" href="imagens/projetos/Fachada Roxa com Jardim Vertical Açaí Celia.png" data-lightbox="imagens/projetos/Fachada Roxa com Jardim Vertical Açaí Celia.png">
+                <img src="imagens/projetos/Fachada Roxa com Jardim Vertical Açaí Celia.png" alt="Fachada comercial Açaí Celia pintada pela DP Pinturas" />
+                <div class="gallery__caption">
+                  <span class="tag">Comercial</span>
+                  <h3>Açaí Celia</h3>
+                </div>
+              </a>
+              <a class="gallery__item reveal" href="imagens/projetos/Casa moderna com pátio ensolarado.png" data-lightbox="imagens/projetos/Casa moderna com pátio ensolarado.png">
+                <img src="imagens/projetos/Casa moderna com pátio ensolarado.png" alt="Área externa com madeira, stain e pátio" />
+                <div class="gallery__caption">
+                  <span class="tag">Madeira / Stain</span>
+                  <h3>Deck e Área Externa</h3>
+                </div>
+              </a>
+            </div>
+            <aside class="equip-card reveal">
+              <span class="eyebrow">Equipamentos profissionais</span>
+              <h3>Ferramentas certas<br>para um resultado superior</h3>
+              <p>
+                Trabalhamos com equipamentos de ponta, como Airless, compressores, lixadeiras, aspiradores e acessórios, garantindo mais qualidade, precisão e um acabamento impecável.
+              </p>
+              <img src="assets/equipment-nauber.png" alt="Equipamentos profissionais Nauber utilizados pela DP Pinturas" />
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof" id="depoimentos">
+        <div class="container proof__grid">
+          <div>
+            <span class="eyebrow reveal">Depoimentos de clientes</span>
+            <h2 class="reveal">A confiança de quem já transformou seu ambiente</h2>
+            <p class="lead reveal" style="margin-top: 12px">
+              Resultados que falam. Mais de 10 anos pintando em Orleans e região.
+            </p>
+            <div class="testimonials">
+              <article class="t-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>“Serviço impecável! Profissionalismo, pontualidade e um acabamento perfeito. Recomendo de olhos fechados.”</p>
+                <div class="t-card__person">
+                  <div class="avatar" style="background: #006341">CM</div>
+                  <div>
+                    <strong>Carla Mendes</strong>
+                    <small>Orleans, SC</small>
+                  </div>
+                </div>
+              </article>
+              <article class="t-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>“Pontualidade, qualidade e atendimento diferenciado. Nossa casa ficou incrível!”</p>
+                <div class="t-card__person">
+                  <div class="avatar" style="background: #087a4b">RS</div>
+                  <div>
+                    <strong>Roberto Silva</strong>
+                    <small>Orleans, SC</small>
+                  </div>
+                </div>
+              </article>
+              <article class="t-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>“Do orçamento à entrega, tudo em perfeito. Equipe técnica e profissional. Nossa casa ficou renovada!”</p>
+                <div class="t-card__person">
+                  <div class="avatar" style="background: #13a85f">JC</div>
+                  <div>
+                    <strong>Juliana Costa</strong>
+                    <small>Orleans, SC</small>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div id="faq">
+            <span class="eyebrow reveal">Perguntas frequentes</span>
+            <h2 class="reveal">Tire suas dúvidas</h2>
+            <div class="faq" style="margin-top: 22px">
+              <article class="faq-item is-open reveal">
+                <button type="button">
+                  Vocês atendem residencial e comercial?
+                  <i data-lucide="plus"></i>
+                </button>
+                <div class="faq-item__body">
+                  Sim. Realizamos pintura em casas, apartamentos, comércios, galpões e áreas externas em Orleans e região.
+                </div>
+              </article>
+              <article class="faq-item reveal">
+                <button type="button">
+                  Trabalham com airless?
+                  <i data-lucide="plus"></i>
+                </button>
+                <div class="faq-item__body">
+                  Sim. Utilizamos equipamentos airless profissionais para ganhar produtividade, uniformidade e um acabamento superior.
+                </div>
+              </article>
+              <article class="faq-item reveal">
+                <button type="button">
+                  Pintura valoriza o imóvel?
+                  <i data-lucide="plus"></i>
+                </button>
+                <div class="faq-item__body">
+                  Sim. Uma pintura bem feita renova a aparência, transmite cuidado e aumenta o valor percebido na hora de vender ou alugar.
+                </div>
+              </article>
+              <article class="faq-item reveal">
+                <button type="button">
+                  Atendem em Orleans e região?
+                  <i data-lucide="plus"></i>
+                </button>
+                <div class="faq-item__body">
+                  Sim. Atendemos Orleans e cidades da região, com pontualidade e acompanhamento do início ao acabamento.
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contato">
+        <div class="container cta__inner">
+          <img class="cta__roller reveal" src="assets/roller.png" alt="Rolo de pintura" />
+          <div class="cta__copy">
+            <h2 class="reveal">Vamos transformar <span>seu ambiente?</span></h2>
+            <p class="reveal">Solicite um orçamento sem compromisso e<br />conte com quem entende de pintura de verdade.</p>
+          </div>
+          <div class="cta__actions reveal">
+            <div class="cta__contact">
+              <a class="cta__phone" href="https://wa.me/5548996228018" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                (48) 99622-8018
+              </a>
+              <p class="cta__region">Atendimento em Orleans e região</p>
+            </div>
+            <a class="btn btn--yellow cta__btn" href="https://wa.me/5548996228018?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+              Falar pelo WhatsApp
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+          <div class="cta__aside reveal">
+            <img src="assets/cta-slogan.png" alt="Seu projeto em boas mãos!" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="#inicio"><img src="assets/logo-crop.png" alt="DP Pinturas" /></a>
+          <p>Qualidade hoje. Ambientes novos amanhã.</p>
+        </div>
+        <div>
+          <h4>Links Rápidos</h4>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div>
+          <h4>Nossos Serviços</h4>
+          <a href="#servicos">Pintura Residencial e Comercial</a>
+          <a href="#servicos">Pintura Airless</a>
+          <a href="#servicos">Aplicação de Massa</a>
+          <a href="#servicos">Cimento Queimado</a>
+          <a href="#servicos">Efeitos Decorativos</a>
+          <a href="#servicos">Madeira e Stain</a>
+        </div>
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <a href="https://wa.me/5548996228018" target="_blank" rel="noopener">
+            <i data-lucide="phone"></i>
+            (48) 99622-8018
+          </a>
+          <a href="mailto:dp.pinturasorleans@gmail.com">
+            <i data-lucide="mail"></i>
+            dp.pinturasorleans@gmail.com
+          </a>
+          <p><i data-lucide="map-pin"></i> Orleans, Santa Catarina</p>
+          <div class="socials">
+            <a href="#contato" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#contato" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://wa.me/5548996228018" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__slogan">
+          <img src="assets/brush-future.png" alt="Pintando um futuro melhor!" />
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© 2026 DP Pinturas. Todos os direitos reservados.</p>
+        <div class="footer__links">
+          <a href="politica-de-privacidade.html">Política de Privacidade</a>
+          <a href="termos-de-uso.html">Termos de Uso</a>
+        </div>
+      </div>
+      <div class="secure">
+        <img src="assets/site-seguro.webp" alt="Site seguro Google" />
+      </div>
+      <p class="credit">
+        Desenvolvido por
+        <a href="https://wa.me/5545999337045" target="_blank" rel="noopener">Kauan Desenvolvimento Software</a>
+      </p>
+    </footer>
+
+    <a
+      class="wa-float"
+      href="https://wa.me/5548996228018?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <div class="lightbox" role="dialog" aria-modal="true">
+      <button type="button" aria-label="Fechar">✕</button>
+      <img alt="Projeto em destaque" />
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
