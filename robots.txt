@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://site-dp-pinturas.vercel.app/sitemap.xml

@@ -1,0 +1,19 @@
+{
+  "name": "DP Pinturas",
+  "short_name": "DP Pinturas",
+  "description": "DP Pinturas — pintura residencial e comercial em Orleans e região, Santa Catarina.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "lang": "pt-BR",
+  "background_color": "#ffffff",
+  "theme_color": "#006341",
+  "icons": [
+    {
+      "src": "/assets/logo-alt.png",
+      "sizes": "311x235",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
